@@ -48,3 +48,6 @@ elif(level=="e"):
                 print("You lose")
 else:
     print("wrong")
+
+# by myself without any help
+# keep it up boi sachin
