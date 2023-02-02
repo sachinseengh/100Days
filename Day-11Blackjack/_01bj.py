@@ -13,15 +13,14 @@ if(agree=="y"):
     my_cards.append(cardgiven)
     cardtocomputer=random.choice(cards)
     computer.append(cardtocomputer)
-  
-    extracard=input("Do you want extra card(y/n)\n")
+
+    extracard="y"
     while extracard=="y":
-        extracard=extracard
-        print(f"your cards={computer}")
-        print(f"Computer card = {my_cards}")
+        extracard2=input("Do you want extra card(y/n)\n")
+        extracard=extracard2
         my_cards.append(random.choice(cards))
         computer.append(random.choice(cards))
-    
+
     print(f"your cards={computer}")
     print(f"Computer card = {my_cards}")
     computer_sum=0
@@ -36,7 +35,7 @@ if(agree=="y"):
         print("computer Wins")
     else:
         print("You win")
-    
+
 else:
     print("get lost")
 
